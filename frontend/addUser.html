@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Add] User</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/addUser.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-utensils"></i> Grab Restaurant</a>
+
+    <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="allRestaurant.html"><i class="fas fa-store"></i> All Restaurant</a>
+      <a href="allUser.html"><i class="fas fa-users"></i> All User</a>
+      <a href="addRestaurant.html"><i class="fas fa-folder-plus"></i> Add Restaurant</a>
+      <a href="addUser.html"><i class="fas fa-user-plus"></i> Add User</a>
+  </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+</header>
+<!-- header section ends -->
+
+
+<!-- form section starts  -->
+
+<div class="wrapper">
+  <div class="title">
+    [Add New] Users
+  </div>
+    <div class="form">
+
+        <div class="inputfield">
+          <label>รูปโปรไฟล์</label>
+          <input type="text" id="profile" class="input"/> 
+        </div>
+
+        <div class="inputfield">
+          <label>ชื่อ</label>
+          <input type="text" id="firstName" class="input" placeholder="กรอกชื่อ">
+        </div> 
+
+        <div class="inputfield">
+          <label>นามสกุล</label>
+          <input type="text" id="lastName" class="input" placeholder="กรอกนามสกุล">
+        </div>  
+
+        <div class="inputfield">
+          <label>ตำแหน่ง</label>
+            <select id="pocition" class="input">
+              <option value="หัวหน้าเชฟ">หัวหน้าเชฟ</option>
+              <option value="ผู้ช่วยเชฟ">ผู้ช่วยเชฟ</option>
+              <option value="พนักงานครัว">พนักงานครัว</option>
+              <option value="พนักงานทำความสะอาดในครัว">พนักงานทำความสะอาดในครัว</option>
+              <option value="แคชเชียร์">แคชเชียร์</option>
+              <option value="พนักงานเสิร์ฟ">พนักงานเสิร์ฟ</option>
+          </select>
+        </div>
+
+        <div class="inputfield">
+          <label>เพศ</label>
+          <input type="radio" id="gender" name="fav_language" value="ชาย">
+          <label for="gender">ชาย</label>
+          <input type="radio" id="gender" name="fav_language" value="หญิง">
+          <label for="gender">หญิง</label>
+        </div>
+
+        <div class="inputfield">
+          <label>เบอร์โทร</label>
+          <input type="text" id="tel" class="input" placeholder="กรอกเบอร์โทร">
+        </div> 
+
+        <div class="inputfield">
+          <label>ที่อยู่</label>
+          <textarea class="textarea" id="address" class="input" placeholder="กรอกที่อยู่"></textarea>
+        </div> 
+   
+        <div class="inputfield">
+          <a href="#" class="btn btn-success mt-4" onclick="addUser()">Add New</a>
+          <a href="allUsers.html" class="btn btn-danger mt-4">Cancel</a>
+        </div>
+  </div>
+</div>	
+
+<!-- form section ends -->
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/addUser.js"></script>
+
+</body>
+</html>
