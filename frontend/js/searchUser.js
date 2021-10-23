@@ -1,11 +1,11 @@
 
 // delete
 const deleteUser = async (id) =>{
-    //ฟังชั่น deleteRestaurant ที่เป็น async ด้านในจะมีการใช้ await
+    //ฟังชั่น deleteUser ที่เป็น async ด้านในจะมีการใช้ await
     if(id){ // ถ้ามี ข้อมูลใน id 
         try {
-            const user =  await fetch(  // ตัวแปล restaurant ที่มีการ fetch
-                "http://localhost:5000/apis/user/" + id, //ทำการส่ง http://localhost:5000/apis/restaurants/ พร้อม id
+            const user =  await fetch(  // ตัวแปล user ที่มีการ fetch
+                "http://localhost:5000/apis/user/" + id, //ทำการส่ง http://localhost:5000/apis/user/ พร้อม id
                 {
                     method: "DELETE", //ชนิดการยิง API DELETE
                     mode: "cors", //ตั่ง mode เป็นcors
@@ -20,15 +20,15 @@ const deleteUser = async (id) =>{
                     return response.json();//ส่ง การตอบกลับเป็น json
                 })
                 .then(()=>{
-                    alert(`รหัสร้านอาหาร ${id} ถูกลบแล้ว`);// เเสดงข้อความ เเนบตัวแปร id Restaurant id ${id} is delete
+                    alert(`รหัสร้านอาหาร ${id} ถูกลบแล้ว`);// เเสดงข้อความ เเนบตัวแปร id user id ${id} is delete
                     location.replace("allUser.html");
                 });
         } catch (error) { //หาก ทำงานไม่สำเร็จ 
-            alert(`รหัสร้านอาหาร ${id} not found`) // ให้เเสดง Restaurant id ${id} not found
+            alert(`รหัสร้านอาหาร ${id} not found`) // ให้เเสดง user id ${id} not found
         }
     }else{
         alert("ไม่มีรหัสร้านอาหาร")
-        // ถ้า ไม่ใช่กรณีที่หาไม่เจอ ให้ขึ้นเเจ้งเตือน ว่า Restaurant id is missing ที่เเปลว่าไม่มี
+        // ถ้า ไม่ใช่กรณีที่หาไม่เจอ ให้ขึ้นเเจ้งเตือน ว่า user id is missing ที่เเปลว่าไม่มี
     }
 };
 
