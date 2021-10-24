@@ -25,10 +25,9 @@ const addUser = (element) => {
                     <img src="${element.profile}" alt="${element.firstName}" />
                 </div>
                     <div class="card-body">
-                        <span class="tag tag-teal">${element.pocition}</span>
                             <h4>Name : ${element.firstName} ${element.lastName}</h4>
-                            <p>Gender : ${element.firstName} </p>
-                            <p>Tel : ${element.gender}</p>
+                            <p>Gender : ${element.gender} </p>
+                            <p>Tel : ${element.tel}</p>
                             <p>Address : ${element.address}</p>
                     <div class="user">
                         <a href="editUser.html?id=${element.id}" class="btn-warning"><i class="far fa-edit"></i></a>

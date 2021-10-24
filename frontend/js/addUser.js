@@ -4,7 +4,6 @@ const addUser = async() => {
      const profile = document.getElementById("profile").value;
      const firstName = document.getElementById("firstName").value;
      const lastName = document.getElementById("lastName").value;
-     const pocition = document.getElementById("pocition").value;
      const gender = document.getElementById("gender").value;
      const tel = document.getElementById("tel").value;
      const address = document.getElementById("address").value;
@@ -15,7 +14,6 @@ const addUser = async() => {
             profile: profile,
             firstName: firstName,
             lastName: lastName,
-            pocition: pocition,
             gender: gender,
             tel: tel,
             address: address,

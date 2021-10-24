@@ -6,7 +6,6 @@ const User = function (user){  //ใช้ arrow function ไม่สามา�
     this.profile = user.profile;
     this.firstName = user.firstName;
     this.lastName = user.lastName;
-    this.pocition = user.pocition;
     this.gender = user.gender;
     this.tel = user.tel;
     this.address = user.address;

@@ -20,8 +20,6 @@ const init = async () =>{
             document.getElementById("profile").value = User.profile;
             document.getElementById("firstName").value = User.firstName;
             document.getElementById("lastName").value = User.lastName;
-            document.getElementById("pocition").value = User.pocition;
-            document.getElementById("gender").value = User.gender;
             document.getElementById("tel").value = User.tel;
             document.getElementById("address").value = User.address;
         }catch (error){

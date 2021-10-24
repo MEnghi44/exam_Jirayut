@@ -10,7 +10,6 @@ router.post("/user",(req,res) =>{
         profile:req.body.profile,
         firstName:req.body.firstName,
         lastName:req.body.lastName,
-        pocition:req.body.pocition,
         gender:req.body.gender,
         tel:req.body.tel,
         address:req.body.address,

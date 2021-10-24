@@ -84,7 +84,7 @@ const searchUser = async (event)=>{
         });
         //console.log(allUser);
         const result = allUser.filter(//ทำการฟิลเตอร์  allUser เก็บไว้ใน  result
-            (item) => item.firstName.includes(keyword) || item.pocition.includes(keyword)// เอาเฉพาะ ที่ตรงกับที่ ค้านหาหรือเหมือนที่ค้นหา
+            (item) => item.firstName.includes(keyword) || item.lastName.includes(keyword)// เอาเฉพาะ ที่ตรงกับที่ ค้านหาหรือเหมือนที่ค้นหา
             );
             removeAllResult();//เรีกใช้ ฟังชั่น removeAllResult();
             result.forEach((element) => addUser(element));
