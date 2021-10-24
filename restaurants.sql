@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 14, 2021 at 02:38 PM
+-- Generation Time: Oct 24, 2021 at 12:53 PM
 -- Server version: 10.4.21-MariaDB
--- PHP Version: 7.4.23
+-- PHP Version: 7.4.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -64,11 +64,17 @@ CREATE TABLE `user` (
   `profile` varchar(255) NOT NULL,
   `firstName` varchar(255) NOT NULL,
   `lastName` varchar(255) NOT NULL,
-  `pocition` varchar(255) NOT NULL,
   `gender` varchar(255) NOT NULL,
   `tel` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `profile`, `firstName`, `lastName`, `gender`, `tel`, `address`) VALUES
+(3, 'https://media.discordapp.net/attachments/898136704488210443/898136737988091934/profile.jpg', 'จิรายุส', 'สหพรอุดมการ', 'ชาย', '0949627105', '18/1 ม9 ต.หนองสองห้อง อ.บ้านแพ้ว จ.สมุทรสาคร 74120');
 
 --
 -- Indexes for dumped tables
@@ -100,7 +106,7 @@ ALTER TABLE `restaurants`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
